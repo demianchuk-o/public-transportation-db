@@ -1,0 +1,12 @@
+COPY days_of_week(day_id, day_name) FROM 'D:\Labs\kursach_db\csv\days_of_week.csv' DELIMITER ';' CSV HEADER;
+COPY metro_stations(station_name, inclusiveness) FROM 'D:\Labs\kursach_db\csv\metro_stations.csv' DELIMITER ';' CSV HEADER;
+COPY above_ground_stops(stop_name) FROM 'D:\Labs\kursach_db\csv\above_ground_stops.csv' DELIMITER ';' CSV HEADER;
+COPY metro_routes(route_name, work_start, work_end)  FROM 'D:\Labs\kursach_db\csv\metro_routes.csv' DELIMITER ';' CSV HEADER;
+COPY bus_routes(route_name, work_start, work_end)  FROM 'D:\Labs\kursach_db\csv\bus_routes.csv' DELIMITER ';' CSV HEADER;
+COPY tram_routes(route_name, work_start, work_end)  FROM 'D:\Labs\kursach_db\csv\tram_routes.csv' DELIMITER ';' CSV HEADER;
+COPY bus_schedule(day_id, route_id, interval_start, interval_end, interval) FROM 'D:\Labs\kursach_db\csv\bus_schedule.csv' DELIMITER ';' CSV HEADER;
+COPY tram_schedule(day_id, route_id, interval_start, interval_end, interval) FROM 'D:\Labs\kursach_db\csv\tram_schedule.csv' DELIMITER ';' CSV HEADER;
+COPY metro_schedule(day_id, route_id, interval_start, interval_end, interval) FROM 'D:\Labs\kursach_db\csv\metro_schedule.csv' DELIMITER ';' CSV HEADER;
+COPY bus_routes_stops(route_id, stop_id, stop_order, arrival_time)  FROM 'D:\Labs\kursach_db\csv\bus_routes_stops.csv' DELIMITER ';' CSV HEADER;
+COPY tram_routes_stops(route_id, stop_id, stop_order, arrival_time)  FROM 'D:\Labs\kursach_db\csv\tram_routes_stops.csv' DELIMITER ';' CSV HEADER;
+COPY metro_routes_stations(route_id, stop_id, stop_order, arrival_time) FROM 'D:\Labs\kursach_db\csv\metro_routes_stations.csv' DELIMITER ';' CSV HEADER;
